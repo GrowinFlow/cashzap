@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash&#9889;Zap | COntact us</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body class="overflow-x-hidden bg-gray-100 transition-all duration-1000 ease-out">
+
+
+    <div class="sidebar">
+
+
+        <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200">
+            <div class="px-3 py-3 lg:px-5 lg:pl-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-start rtl:justify-end">
+                        <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                            aria-controls="logo-sidebar" type="button"
+                            class="inline-flex items-center py-1 px-2 text-sm text-gray-500 rounded-lg sm:hidden bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200   ">
+                            <span class="sr-only">Open sidebar</span>
+                            <i class="fa-solid fa-bars flex-shrink-0 text-xl text-gray-500 transition duration-75 "></i>
+                        </button>
+                        <a href="#" class="flex ms-2 md:me-24">
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap ">Cash<i
+                                    class="fa-solid fa-bolt fa-shake text-md text-purple-800 group-hover:text-purple-800"></i>Zap</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center ms-3">
+                            <div>
+                                <button type="button"
+                                    class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 "
+                                    aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="w-8 h-8 rounded-full object-fit" src="./images/user.webp"
+                                        alt="user photo" id="user-dp">
+                                </button>
+                            </div>
+                            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow  "
+                                id="dropdown-user" data-popper-placement="bottom"
+                                style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1250px, 54px, 0px);">
+                                <div class="px-4 py-3" role="none">
+                                    <p class="text-sm text-gray-900 " role="none">
+                                        User
+                                    </p>
+                                    <p class="text-sm font-medium text-gray-900 truncate " role="none">
+                                        user.cash@zap.com
+                                    </p>
+                                </div>
+                                <ul class="py-1" role="none">
+                                    <li>
+                                        <a href="./send.html"
+                                            class="block px-4 py-2 text-sm text-purple-800 hover:bg-gray-100   "
+                                            role="menuitem">send</a>
+                                    </li>
+                                    <li>
+                                        <a href="./send-money.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100   "
+                                            role="menuitem">Pay</a>
+                                    </li>
+                                    <li>
+                                        <a href="./transactions.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100   "
+                                            role="menuitem">Histroy</a>
+                                    </li>
+                                    <li>
+                                        <a href="./index.html"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100   "
+                                            role="menuitem">Sign out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <aside id="logo-sidebar"
+            class="fixed top-16 left-4 z-40 w-64 h-[90vh] shadow-lg rounded-lg py-4 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 "
+            aria-label="Sidebar" aria-hidden="true">
+            <div class=" pr-3 pb-4 flex flex-col justify-between overflow-y-auto bg-white rounded-lg h-full">
+                <ul class="space-y-2 font-medium">
+                    <li>
+                        <a href="./dashboard.html"
+                            class="flex text-gray-900 items-center p-2 rounded-lg hover:bg-gray-100 group">
+                            <i
+                                class="fa-solid fa-chart-pie flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 "></i>
+                            <span class="ms-3">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button type="button"
+                            class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100  "
+                            aria-controls="dropdown-example" data-collapse-toggle="dropdown-example"
+                            aria-expanded="false">
+                            <i
+                                class="fa-solid fa-arrow-right-arrow-left flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 "></i>
+                            <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Transactions</span>
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 10 6">
+                                <path stroke="currentColor" class="stroke-purple-800" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                            </svg>
+                        </button>
+                        <ul id="dropdown-example" class="py-2 space-y-2 hidden">
+                            <li>
+                                <a href="./transactions.html"
+                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 ">All</a>
+                            </li>
+                            <li>
+                                <a href="./transactions.html"
+                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 ">Send</a>
+                            </li>
+                            <li>
+                                <a href="./transactions.html"
+                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 ">Receive</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="./send-money.html"
+                            class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100  group">
+                            <i
+                                class="fa-solid fa-money-bill-trend-up flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 "></i>
+                            <span class="flex-1 ms-3 whitespace-nowrap">Send money</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100  group">
+                            <i class="fa-solid fa-gift flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 "></i>
+                            <span class="flex-1 ms-3 whitespace-nowrap">Cashback</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./index.html"
+                            class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100  group">
+                            <i
+                                class="fa-solid fa-right-to-bracket flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 "></i>
+                            <span class="flex-1 ms-3 whitespace-nowrap">Sign out</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="flex flex-col font-medium">
+                    <li>
+                        <a href="./support.html"
+                            class="flex items-center p-2 text-gray-500 transition duration-75 rounded-lg hover:bg-gray-100  group">
+                            <i
+                                class="fa-solid fa-headset flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 "></i>
+                            <span class="ms-3">Support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="flex items-center p-2 text-purple-700 rounded-lg bg-gray-100  group">
+                            <i
+                                class="fa-solid fa-phone flex-shrink-0 w-5 h-5 text-purple-700 transition duration-75 "></i>
+                            <span class="flex-1 ms-3 whitespace-nowrap">Contact us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </aside>
+    </div>
+
+
+
+    <main class="p-4 py-2 mt-14 sm:ml-64">
+
+        <div class="contact-area bg-white rounded-lg shadow-lg grid grid-cols-auto lg:grid-cols-2 p-4">
+
+            <div class="contact-img">
+                <img src="./images/support-man.png" alt="contact-man">
+            </div>
+
+            <div class="contact-box bg-white shadow-lg rounded-lg flex justify-center items-center">
+
+            <form action="">
+
+                <div class="bank-id mb-5">
+                    <label for="bank-id" class="block mb-2 text-sm font-medium text-gray-900">Your Bank id</label>
+                    <div class="shadow-lg">
+
+                        <input type="text" id="bank-id"
+                            class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 outline-none shadow-lg"
+                            placeholder="Enter Bank-id . . . ." required />
+                    </div>
+                </div>
+                <div class="email mb-5">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your Email</label>
+                    <div class="shadow-lg">
+
+                        <input type="email" id="email"
+                            class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 outline-none shadow-lg"
+                            placeholder="Enter email . . . ." required />
+                    </div>
+                </div>
+
+                <div class="user-complain-messege mb-5">
+
+                    <p class="text-sm font-medium text-gray-900 block mb-2">Please describe your issue or question.</p>
+                    <div
+                        class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 hover:border-purple-500 shadow-lg">
+
+                        <div class="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
+                            <label for="comment" class="sr-only">Your comment</label>
+                            <textarea id="comment" rows="4"
+                                class="w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 outline-none"
+                                placeholder="I'm here to help! Please feel free  . . . ."
+                                required></textarea>
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 border-t dark:border-gray-600">
+                            <button type="submit"
+                                class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-purple-700 rounded-lg focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-900 hover:bg-purple-800 shadow-lg">
+                                Get Help
+                            </button>
+                            <div class="flex ps-0 space-x-1 rtl:space-x-reverse sm:ps-2">
+                                <button type="button"
+                                    class="inline-flex justify-center items-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 12 20">
+                                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 6v8a5 5 0 1 0 10 0V4.5a3.5 3.5 0 1 0-7 0V13a2 2 0 0 0 4 0V6" />
+                                    </svg>
+                                    <span class="sr-only">Attach file</span>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ms-auto text-xs text-gray-500 dark:text-gray-400">Please ensure your contributions adhere
+                        to our <a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Community
+                            Guidelines</a>.</p>
+
+
+                </div>
+
+            </form>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+    <footer class="bg-gray-100  mt-4 z-[100]">
+
+        <div class="container mx-auto p-4">
+            <div class="water-mark text-center">
+                <span class="self-center   whitespace-nowrap select-none"> <span class="text-gray-400">Powered by</span>
+                    Cash<i class="fa-solid fa-bolt fa-shake text-md text-purple-700"></i>Zap</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./js/flowbite.min.js"></script>
+</body>
+
+</html>

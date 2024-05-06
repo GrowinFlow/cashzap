@@ -1,0 +1,59 @@
+/* scroll bar  */
+/* Customize the scrollbar */
+/* For Firefox */
+.scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color:  #f5f5f5;
+}
+
+/* For Chrome, Edge, and Safari */
+.scroll-bar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Change the color of the thumb */
+  border-radius: 5px; /* Round the corners of the thumb */
+}
+
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Change the color of the thumb on hover */
+}
+
+
+/* send money  */
+#card-number-input:focus + .absolute > svg {
+    fill: #8b5cf6;
+}
+
+
+
+  input[type="radio"]:checked + label .fa-cc-mastercard,
+  input[type="radio"]:checked + label .fa-building-columns,
+  input[type="radio"]:checked + label .fa-bolt {
+    color: #805ad5; /* Adjust text color as needed */
+    box-shadow: 3px 3px 8px #805ad5;
+  }
+
+  input[type="radio"]:checked + label h4 {
+    color: #805ad5; /* Adjust text color as needed */
+    font-weight: normal; /* Change font-weight as needed */
+  }
+
+.shawd{
+    box-shadow: 3px 3px 8px #805ad5;
+}
+
+
+/* dashboard  */
+
+canvas {
+  display: block;
+  margin:20px auto;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.shadow{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
